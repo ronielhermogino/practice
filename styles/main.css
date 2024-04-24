@@ -1,0 +1,29 @@
+main {
+    padding-top: 100px;
+    padding-left: 175px;
+    padding-right: 25px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-left: 100px;
+    }
+    
+    .images {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .images {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

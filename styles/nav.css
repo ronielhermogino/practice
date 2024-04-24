@@ -1,0 +1,23 @@
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+
+    margin: 0px;
+    width: 150px;
+    background-color: rgb(183, 183, 183);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 75;
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 75px;
+        flex-direction: column;
+    }
+}
